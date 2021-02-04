@@ -12,7 +12,16 @@ const ComponentName = ({ data }) => (
       }}
     >
       {data.allLevel.nodes.map((level) => (
-        <Link to={level.gatsbyPath}>{level.name}</Link>
+        <Link
+          to={level.gatsbyPath}
+          style={{
+            padding: 32,
+            borderRadius: 4,
+            backgroundColor: `white`,
+          }}
+        >
+          {level.name}
+        </Link>
       ))}
     </section>
   </main>
