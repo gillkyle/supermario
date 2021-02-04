@@ -1,0 +1,16 @@
+h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
+html {
+  min-height: 100vh;
+  background-color: #e70414;
+  color: white;
+}
+
+a {
+  color: ivory;
+}
+a:visited {
+  color: yellow;
+}
