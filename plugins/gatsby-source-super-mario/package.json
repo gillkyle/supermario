@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-source-super-mario",
+  "description": "A gatsby plugin to source data about Super Mario levels",
+  "version": "0.0.3",
+  "author": "@gillkyle",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": "^2.32.2"
+  }
+}

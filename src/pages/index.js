@@ -10,15 +10,14 @@ const ComponentName = ({ data }) => (
 
 export const query = graphql`
   {
-    mario {
-      levels {
+    allLevel {
+      nodes {
         id
         name
-        setting
         enemies
+        setting
       }
     }
   }
 `;
-
 export default ComponentName;

@@ -14,13 +14,6 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "Mario",
-        fieldName: "mario",
-        url: "https://super-mario-api.glitch.me/",
-      },
-    },
+    "gatsby-source-super-mario",
   ],
 };
