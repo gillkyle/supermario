@@ -1,11 +1,15 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const ComponentName = ({ data }) => (
-  <section>
+  <main>
     <h1>Super Mario Bros</h1>
-    <pre>{JSON.stringify(data, null, 4)}</pre>
-  </section>
+    <section>
+      {data.allLevel.nodes.map((level) => (
+        <Link to={level.gatsbyPath}>{level.name}</Link>
+      ))}
+    </section>
+  </main>
 );
 
 export const query = graphql`
@@ -16,6 +20,7 @@ export const query = graphql`
         name
         enemies
         setting
+        gatsbyPath(filePath: "/level/{Level.name}")
       }
     }
   }
